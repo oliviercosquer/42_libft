@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+         #
+#    By: olivier <olivier@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/19 18:12:20 by ocosquer          #+#    #+#              #
-#    Updated: 2013/12/02 20:10:50 by ocosquer         ###   ########.fr        #
+#    Updated: 2015/02/09 02:21:42 by olivier          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = gcc
-FLAGS = -Wall -Werror -Wextra -m32
+FLAGS = -Wall -Werror -Wextra
 SRC_PATH = ./srcs
 SRC_FILES = ft_bzero.c ft_memcpy.c ft_memccpy.c \
 		ft_memchr.c ft_memmove.c ft_memset.c \

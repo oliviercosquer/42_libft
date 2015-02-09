@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 19:11:11 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 19:26:53 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/09 02:36:32 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	ft_isalpha(int c)
 	int	result;
 
 	result = 0;
-	result = ((c > 64 && c < 91) || (c > 96 && c < 123)) ? 1 : 0;
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122 ))
+		result = 1024;
 	return (result);
 }

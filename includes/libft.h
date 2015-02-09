@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:46:34 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:40:43 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/04 23:10:42 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ void	ft_striter(char *s, void(*f)(char*));
 void	ft_striteri(char *s, void(*f)(unsigned int, char*));
 char*	ft_strmap(char const *s, char (*f)(char));
 char*	ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int		ft_streau(char const *s1m, char const *s2);
-int		ft_strenau(char const *s1m, char const *s2, size_t n);
+int		ft_strequ(char const *s1m, char const *s2);
+int		ft_strenqu(char const *s1m, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strljoin(const char *s1, const char *s2, int n);
