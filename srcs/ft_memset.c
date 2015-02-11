@@ -6,15 +6,16 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:40:55 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:39:25 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 01:45:26 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include <libft.h>
 
 void	*ft_memset(void *byte, int character, size_t len)
 {
 	unsigned char	new_char;
-	char	*new_array;
+	char			*new_array;
 	unsigned int	length;
 
 	length = 0;

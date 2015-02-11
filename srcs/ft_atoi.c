@@ -6,10 +6,11 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 18:58:00 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/08 16:24:26 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 01:43:22 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include <libft.h>
 
 int	ft_atoi(const char *str)
 {

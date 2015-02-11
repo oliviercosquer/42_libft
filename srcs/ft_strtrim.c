@@ -6,17 +6,18 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 15:28:39 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:24:37 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 02:03:42 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-char * ft_strtrim(char const *s)
+#include <libft.h>
+
+char	*ft_strtrim(char const *s)
 {
 	char	*new_str;
-	int	start;
-	int	end;
-	int	len;
+	int		start;
+	int		end;
+	int		len;
 
 	new_str = (char*)s;
 	start = 0;

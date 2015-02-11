@@ -6,15 +6,15 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 12:04:22 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:16:15 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 01:53:04 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-void*	ft_memalloc(size_t size)
+void	*ft_memalloc(size_t size)
 {
-	char*	ptr;
+	char			*ptr;
 	unsigned int	index;
 
 	ptr = (char*)malloc(size);

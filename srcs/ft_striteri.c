@@ -6,13 +6,13 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 19:17:53 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:20:08 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 02:06:20 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-void	ft_striteri(char *s, void(*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int	i;
 

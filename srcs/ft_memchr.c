@@ -6,16 +6,17 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 17:36:04 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:03:38 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 01:44:37 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include <libft.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*str;
-	char	character;
-	char	*ptr;
+	char			*str;
+	char			character;
+	char			*ptr;
 	unsigned int	index;
 
 	str = (char*)s;

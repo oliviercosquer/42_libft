@@ -6,16 +6,16 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 11:27:05 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:36:20 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 01:46:17 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 char	*ft_strdup(const char *str)
 {
-	int	length;
-	int	index;
+	int		length;
+	int		index;
 	char	*new_str;
 
 	length = ft_strlen((char*)str);

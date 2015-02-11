@@ -6,11 +6,11 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 15:29:53 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/08 16:23:41 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 01:55:45 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 int	ft_toupper(int c)
 {

@@ -6,18 +6,18 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 16:34:41 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:12:38 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 01:49:21 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	index;
 	unsigned int	len1;
 	unsigned int	len2;
-	int	diff;
+	int				diff;
 
 	index = 0;
 	len1 = ft_strlen((char*)s1);

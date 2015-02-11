@@ -6,16 +6,16 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 13:01:27 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:14:06 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/11 01:49:38 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int	length;
-	int	index;
+	int		length;
+	int		index;
 	char	*found;
 
 	length = ft_strlen((char*)str) + 1;
