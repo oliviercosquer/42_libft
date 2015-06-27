@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 18:58:00 by ocosquer          #+#    #+#             */
-/*   Updated: 2015/02/11 01:43:22 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/02/26 07:29:56 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(const char *str)
 
 	negative = 1;
 	value = 0;
-	while (*str == ' ' || ft_isprint(*str) == 0)
+	while (*str == ' ' && ft_isprint(*str) == 0)
 		str++;
 	negative = (*str == '-' && !ft_isdigit(*str)) ? -1 : negative;
 	str += (*str == '+' || *str == '-') ? 1 : 0;
