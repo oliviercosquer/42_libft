@@ -6,13 +6,13 @@
 #    By: olivier <olivier@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/19 18:12:20 by ocosquer          #+#    #+#              #
-#    Updated: 2015/06/27 20:31:47 by olivier          ###   ########.fr        #
+#    Updated: 2015/06/28 01:25:27 by olivier          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = gcc
-FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Werror -Wextra -m32
 SRC_PATH = ./srcs
 SRC_FILES = ft_bzero.c ft_memcpy.c ft_memccpy.c \
 		ft_memchr.c ft_memmove.c ft_memset.c \

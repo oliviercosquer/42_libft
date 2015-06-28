@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 19:11:11 by ocosquer          #+#    #+#             */
-/*   Updated: 2015/02/26 07:30:08 by olivier          ###   ########.fr       */
+/*   Updated: 2015/06/28 01:31:52 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_isalpha(int c)
 	int	result;
 
 	result = 0;
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		result = 1;
 	return (result);
 }

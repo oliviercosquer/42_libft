@@ -6,12 +6,12 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 16:17:23 by ocosquer          #+#    #+#             */
-/*   Updated: 2015/06/28 00:02:54 by olivier          ###   ########.fr       */
+/*   Updated: 2015/06/28 02:11:49 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-#include <stdio.h>
+
 void	*ft_memccpy(void *str_dest, const void *str_src, int c, size_t n)
 {
 	unsigned int	i;
@@ -30,8 +30,5 @@ void	*ft_memccpy(void *str_dest, const void *str_src, int c, size_t n)
 			ptr = dest + i + 1;
 		i++;
 	}
-	printf("Dest start: %p\n", str_dest);
-	printf("Src  Start: %p\n", str_src);
-	printf("Ptr found:  %p\n", ptr);
 	return (ptr);
 }
