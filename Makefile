@@ -6,7 +6,7 @@
 #    By: olivier <olivier@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/19 18:12:20 by ocosquer          #+#    #+#              #
-#    Updated: 2015/06/28 01:25:27 by olivier          ###   ########.fr        #
+#    Updated: 2015/06/28 14:47:45 by olivier          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,9 @@ SRC_FILES = ft_bzero.c ft_memcpy.c ft_memccpy.c \
 		ft_strtrim.c ft_strsplit.c ft_itoa.c \
 		ft_putchar.c ft_putstr.c ft_putnbr.c \
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
-		ft_putnbr_fd.c ft_strljoin.c ft_putendl.c
+		ft_putnbr_fd.c ft_strljoin.c ft_putendl.c \
+		ft_lstadd.c ft_lstdel.c ft_lstdelone.c \
+		ft_lstiter.c ft_lstmap.c ft_lstnew.c 
 OBJ = $(SRC_FILES)
 SRCS = $(patsubst %, $(SRC_PATH)/%, $(SRC_FILES))
 all: ${NAME}
