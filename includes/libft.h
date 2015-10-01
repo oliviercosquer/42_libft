@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:46:34 by ocosquer          #+#    #+#             */
-/*   Updated: 2015/06/28 14:44:44 by olivier          ###   ########.fr       */
+/*   Updated: 2015/07/02 20:15:26 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,4 +79,5 @@ t_list	*ft_lstnew(void const *content, size_t content_size);
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t content_size));
 void	ft_lstadd(t_list **alst, t_list *new_elem);
+int		get_next_line(int fd, char **line);
 #endif
