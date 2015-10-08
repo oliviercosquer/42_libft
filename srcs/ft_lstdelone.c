@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/28 14:36:57 by olivier           #+#    #+#             */
-/*   Updated: 2015/06/28 14:49:26 by olivier          ###   ########.fr       */
+/*   Updated: 2015/10/08 23:41:57 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 	{
 		del((*alst)->content, (*alst)->content_size);
 		(*alst)->next = NULL;
-		free (*alst);
+		free(*alst);
 		*alst = NULL;
 	}
 }

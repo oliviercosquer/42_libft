@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/28 14:34:45 by olivier           #+#    #+#             */
-/*   Updated: 2015/06/28 14:59:49 by olivier          ###   ########.fr       */
+/*   Updated: 2015/10/08 23:38:02 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	t_list	*new_elem;
 
 	new_elem = (t_list *)(malloc(sizeof(t_list)));
-
 	if (new_elem)
 	{
 		new_elem->content_size = content_size;

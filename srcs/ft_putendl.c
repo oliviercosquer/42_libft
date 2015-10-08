@@ -6,13 +6,13 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/27 20:28:34 by olivier           #+#    #+#             */
-/*   Updated: 2015/06/27 20:31:58 by olivier          ###   ########.fr       */
+/*   Updated: 2015/10/08 23:42:39 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void ft_putendl(char const *s)
+void	ft_putendl(char const *s)
 {
 	ft_putstr(s);
 	ft_putstr("\n");
