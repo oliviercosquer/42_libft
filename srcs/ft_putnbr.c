@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/28 14:59:52 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/11/28 15:01:37 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/10/08 12:40:29 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,10 @@
 
 void	ft_putnbr(int n)
 {
-	char	nb;
+	char	*str;
 
-	nb = '0' + n;
-	if (n >= 10)
-	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
-	}
-	else
-		write(1, &nb, 1);
+	str = ft_itoa(n);
+	ft_putstr(str);
+	if (str)
+		ft_strdel(&str);
 }

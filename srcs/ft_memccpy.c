@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 16:17:23 by ocosquer          #+#    #+#             */
-/*   Updated: 2015/10/07 12:55:03 by olivier          ###   ########.fr       */
+/*   Updated: 2015/10/08 12:21:40 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,20 +18,6 @@ void	*ft_memccpy(void *str_dest, const void *str_src, int c, size_t n)
 	char			*dest;
 	char			*src;
 	char			character;
-	/*char			*ptr;
-
-	dest = (char *)str_dest;
-	src = (char *)str_src;
-	i = 0;
-	ptr = 0;
-	while (i < n && ptr == 0)
-	{
-		dest[i] = src[i];
-		if (src[i] == ((char)c))
-			ptr = dest + i + 1;
-		i++;
-	}
-	return (ptr);*/
 
 	i = 0;
 	character = (char)c;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:45:04 by ocosquer          #+#    #+#             */
-/*   Updated: 2013/12/01 20:11:22 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/10/08 12:20:02 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 
 size_t	ft_strlen(char *str)
 {
-	int	len;
+	size_t	len;
 
 	len = 0;
-	while (str && *str)
+	while (str && str[len])
 	{
 		len++;
-		str++;
 	}
 	return (len);
 }
