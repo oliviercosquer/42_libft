@@ -6,7 +6,7 @@
 /*   By: ocosquer <ocosquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 15:29:09 by ocosquer          #+#    #+#             */
-/*   Updated: 2015/02/11 02:03:08 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/10/13 18:28:27 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char	**ft_strsplit(char const *s, char c)
 	i = 0;
 	nb_elem = ft_countelemstr(s, c);
 	src = (char*)s;
-	str = ft_memalloc(nb_elem);
+	str = (char **)malloc(sizeof(char *) * (nb_elem + 1));
 	while (i < nb_elem)
 	{
 		cur = ft_getnextstr(src, c);
@@ -70,5 +70,6 @@ char	**ft_strsplit(char const *s, char c)
 		i++;
 		src = ft_strstr(s, cur) + ft_strlen(cur);
 	}
+	str[nb_elem] = NULL;
 	return (str);
 }
