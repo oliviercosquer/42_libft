@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/28 14:34:45 by olivier           #+#    #+#             */
-/*   Updated: 2015/10/08 23:38:02 by ocosquer         ###   ########.fr       */
+/*   Updated: 2015/10/13 21:37:44 by ocosquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		new_elem->content = (void *)malloc(content_size);
 		if (new_elem->content && content)
 			ft_memcpy(new_elem->content, content, content_size);
-		(void)content;
+		else
+			new_elem->content_size = 0;
 		new_elem->next = NULL;
 	}
 	return (new_elem);
