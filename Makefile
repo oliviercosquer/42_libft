@@ -12,7 +12,7 @@
 
 NAME = libft.a
 CC = gcc
-FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Werror -Wextra -w
 SRC_PATH = ./srcs
 SRC_FILES = ft_bzero.c ft_memcpy.c ft_memccpy.c \
 		ft_memchr.c ft_memmove.c ft_memset.c \
@@ -34,7 +34,8 @@ SRC_FILES = ft_bzero.c ft_memcpy.c ft_memccpy.c \
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 		ft_putnbr_fd.c ft_strljoin.c ft_putendl.c \
 		ft_lstadd.c ft_lstdel.c ft_lstdelone.c \
-		ft_lstiter.c ft_lstmap.c ft_lstnew.c
+		ft_lstiter.c ft_lstmap.c ft_lstnew.c \
+		ft_lstadd_end.c
 OBJ = $(SRC_FILES)
 SRCS = $(patsubst %, $(SRC_PATH)/%, $(SRC_FILES))
 all: ${NAME}

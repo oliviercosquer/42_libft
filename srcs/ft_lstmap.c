@@ -14,7 +14,25 @@
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	(void)lst;
-	(void)f;
-	return (NULL);
+	t_list	*new_list;
+	t_list	*new_elem;
+
+	new_list = NULL;
+	while (lst)
+	{
+		new_elem = f(lst);
+		if (new_elem)
+		{
+			if (!new_list)
+				new_list = new_elem;
+			else
+				ft_lstadd_end(new_list, new_elem);
+			lst = lst->next;
+		}
+		else
+		{
+			return (NULL);
+		}
+	}
+	return (new_list);
 }
